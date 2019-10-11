@@ -6,7 +6,7 @@
  </b></a></div>
 
 ---
-# Installation of TransformationAdvisor on ICP Cloud
+# Installation of Transformation Advisor on ICP Cloud
 ---
 
 ![ICP Logo](./images/logoicp.png)
@@ -15,7 +15,7 @@
 
 # Table of Content
 ---
-- [Installation of TransformationAdvisor on ICP Cloud](#Installation of TransformationAdvisor on ICP Cloud)
+- [Installation of Transformation Advisor on ICP Cloud](#Installation of TransformationAdvisor on ICP Cloud)
 - [Table of Content](#table-of-content)
 - [1. Prerequisites](#1-prerequisites)
 - [2. Install TA on icp](#2-install TA on ICP)

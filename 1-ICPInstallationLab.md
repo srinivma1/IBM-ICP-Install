@@ -328,7 +328,7 @@ Another lab will go in detail to explain how Docker is managing the images and r
 
 We are going to use Docker to download the ICP-ce (community edition) package from the **dockerHub** web site:
 
-`docker pull ibmcom/icp-inception:2.1.0.3`
+`docker pull ibmcom/icp-inception:3.2.0`
 
 IBM has packaged all the main components necessary for the installation in one package (note that you can change the version to a more recent one if needed). The pull sub-command is going to download the image on the local file system (the image will be run to install ICP).
 

@@ -417,14 +417,14 @@ The end of the installation should look like this :
 
 **In case of Uninstall**
 ```console
-docker run -e LICENSE=accept --net=host -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:2.1.0.3 uninstall
+docker run -e LICENSE=accept --net=host -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:3.2.0 uninstall
 ```
 
 
 **BEFORE GOING TO THE NEXT STEP, WAIT 5 MINUTES** so that everything can start gracefully.
 
 
-Use the green link at the end of the installation script to get access to the console (admin/admin) in a browser:
+Use the green link at the end of the installation script to get access to the console (admin/admin123) in a browser:
 
 `https://ipaddress:8443`  
 
@@ -450,7 +450,7 @@ For that purpose, open a ssh terminal with the Ubuntu VM in root mode.
 Use the following command to download **kubectl**:
 
 ```console
-docker run -e LICENSE=accept --net=host -v /usr/local/bin:/data ibmcom/icp-inception:2.1.0.3 cp /usr/local/bin/kubectl /data
+docker run -e LICENSE=accept --net=host -v /usr/local/bin:/data ibmcom/icp-inception:3.2.0 cp /usr/local/bin/kubectl /data
 ```
 
 This docker command will copy the kubectl program to the /usr/local/bin.

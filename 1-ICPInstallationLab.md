@@ -302,7 +302,7 @@ You can list all versions available in the added repo:
 
 Use the following command to get Docker installed (Docker version 17.12.1 is the maximum version supported by IBM Cloud Private 2.1.0.3):
 
-`apt-get install docker-ce=17.12.1~ce-0~ubuntu`
+`apt-get install docker-ce=18.0.3~ce-0~ubuntu`
 
 ![apt install](./images/InstallDocker.png)
 
@@ -343,7 +343,7 @@ Create a directory and move to that directory:
 Copy the ICP package into that directory:
 
 ```console
-docker run -e LICENSE=accept -v "$(pwd)":/data ibmcom/icp-inception:2.1.0.3 cp -r cluster /data
+docker run -e LICENSE=accept -v "$(pwd)":/data ibmcom/icp-inception:3.2.0 cp -r cluster /data
 ```
 
 > Note:  this docker command is executing the linux copy (cp) command from the volume (-v parameter). This will create a cluster directory in /opt/icp with all necessary files.
@@ -387,8 +387,14 @@ No need to change for default installation.
 
 > *hosts* and *config.yaml* are the 2 most important files to parameter the ICP installation. In a "standard configuration" with multiple worker nodes, you should specify a list of IP addresses under the worker section. At the time of this version, only ip addresses are supported in the *hosts* file.
 
-**You are now ready to install IBM Cloud Private**.
+Admin password is not present by defualt. Add admin password. Also, disable password_check rules as shown below. E;se, there will be issues while installing ICP.
 
+       default_admin_password: admin123
+       password_rules:
+       - '(.*)'
+
+
+**You are now ready to install IBM Cloud Private**.
 
 ### Task 7: Install ICP
 
@@ -397,7 +403,7 @@ Finally install ICP by using those commands:
 `cd /opt/icp/cluster`
 
 ```console
-docker run -e LICENSE=accept --net=host -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:2.1.0.3 install
+docker run -e LICENSE=accept --net=host -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:3.2.0 install
 ```
 
 Installation should last around 20 minutes. Check messages.

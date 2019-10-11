@@ -18,8 +18,8 @@
 - [Installation of TransformationAdvisor on ICP Cloud](#Installation of TransformationAdvisor on ICP Cloud)
 - [Table of Content](#table-of-content)
 - [1. Prerequisites](#1-prerequisites)
-- [4. First Option: Install ICP on Ubuntu VM](#4-first-option--install-icp-on-ubuntu-vm)
-    + [Task 1 : Configuring the system](#task-1---configuring-the-system)
+- [2. Install TA on icp](#2-install TA on ICP)
+    + [Task 1 : Create secret](#task-1---create secret)
     + [Task 2 : Add Docker’s official GPG key](#task-2---add-docker-s-official-gpg-key)
     + [Task 3: Add a repo to get the Docker](#task-3--add-a-repo-to-get-the-docker)
     + [Task 4: Get Docker](#task-4--get-docker)
@@ -70,5 +70,15 @@
 # 1. prerequisites
 
 Install IBM Private cloud on Ubuntu VM. If not done  already, please follow the instructions below:
+   
+        https://github.com/srinivma1/IBM-ICP-Install/blob/master/1-ICPInstallationLab.md
+        
+        
+# 1. install TA on ICP
 
+Install IBM Private cloud on Ubuntu VM. If not done  already, please follow the instructions below:
+   
+        https://github.com/srinivma1/IBM-ICP-Install/blob/master/1-ICPInstallationLab.md        
+        
+        
 

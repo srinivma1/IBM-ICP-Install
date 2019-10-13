@@ -21,6 +21,9 @@ Install IBM Private cloud on Ubuntu VM. If not done  already, please follow the 
         https://github.com/srinivma1/IBM-ICP-Install/blob/master/1-ICPInstallationLab.md
         
         
+ Create Persistent volumes.       
+        
+        
 # 2. install TA on ICP
 
 1. Generate a secret. 

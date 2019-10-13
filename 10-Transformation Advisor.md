@@ -46,7 +46,7 @@ Install IBM Private cloud on Ubuntu VM. If not done  already, please follow the 
             
   3. In the ICP Catalog, select ibm_trans_adv_dev catalog and provide following parameters.
   
- ![Helm_chart_Parameter](./images/helm chart_parameter_1.png)
+  ![Helm_chart_Parameter](./images/helm chart_parameter_1.png)
   
   
         

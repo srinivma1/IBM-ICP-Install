@@ -26,6 +26,29 @@ Install IBM Private cloud on Ubuntu VM. If not done  already, please follow the 
 1. Generate a secret. 
 
 ![ICP Secret](./images/secret_generation.png)
+
+2. Create secrets.yaml file
+
+            {
+              "apiVersion": "v1",
+              "kind": "Secret",
+              "metadata": {
+                "name": "transadv-secret",
+                "namespace": "transadv-dev",
+                "resourceVersion": "5450"
+              },
+              "data": {
+                "db_username": "VGhpcyBpcyBteSBzZWNyZXQ=",
+                "secret": "VGhpcyBpcyBteSBzZWNyZXQ="
+              },
+              "type": "Opaque"
+            }
+            
+  3. In the ICP Catalog, select ibm_trans_adv_dev catalog and provide following parameters.
+  
+  ![Helm_chart_Parameter](./images/helm chart_parameter_1.png)
+  
+  
         
         
 

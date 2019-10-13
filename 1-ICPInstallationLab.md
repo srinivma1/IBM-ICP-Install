@@ -302,7 +302,7 @@ You can list all versions available in the added repo:
 
 Use the following command to get Docker installed (Docker version 17.12.1 is the maximum version supported by IBM Cloud Private 2.1.0.3):
 
-`apt-get install docker-ce=18.0.3~ce-0~ubuntu`
+`apt-get install 18.03.1~ce~3-0~ubuntu`
 
 ![apt install](./images/InstallDocker.png)
 
